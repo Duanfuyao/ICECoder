@@ -1,0 +1,12 @@
+file.c@40
+avio.c@296
+avio.c@340
+avio.c@206
+ffserver.c@2543
+ffserver.c@2544
+ffserver.c@2474
+ffserver.c@2518
+aviobuf.c@167
+aviobuf.c@168
+
+after_softmax:0.3105

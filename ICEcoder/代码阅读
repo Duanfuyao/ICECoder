@@ -1,0 +1,41 @@
+$reqsFailures = ["xxx"];						用来报错，报对应的错误
+include(dirname(__FILE__) . "/req.php");		用来操作？怎么操作？
+$_SESSION['loggedIn']							全局变量，记录了用户的状态
+$doNext .= 										这是什么操作？是返回一个操作序列吗？
+
+首先调用lib/login.php
+如果是第一次登录会要求设置密码
+第二次会直接要求输入密码
+
+lib/login.php
+29	../assets/images/icecoder.png	可以替换成我们的logo
+
+assets/css/files.css 	主要负责左边文件部分的页面情况
+首先设置滚动条形态
+然后是文本是否可被选择		可修改margin大小调整文件系统显示的位置（这不就是要改的部分么）
+然后是按钮的布局，可以改top修改上下位置
+最后一行不清楚
+
+classes/settings.php
+10	$this->versionNo = "8.0"		8.0可以改成想要的版本号，但是要改多处，注意匹配
+
+classes/file.php		主要负责的是左侧文件管理部分的一些逻辑操作，如删除等；总体是一个大类class File，看看是在哪里实例化的
+85	updateUI()			更新文件部分的页面？
+	FileManager			这个是文件的管理器么？
+
+lib/settings.php		主要负责的是，对各种设置进行判断和一些login的业务逻辑
+	saveFiles文件修改后保存？
+
+
+lib/file-control.php	左侧文件栏添加文件的操作；文件保存
+
+index.php
+382	分栏按钮
+
+
+
+
+
+2种思路
+第一种是整个file部分的代码copy一遍，相当于又是一套file
+第二种是只显示文字条目，然后当点击的时候，把点击操作链接到对于文件的跳转上（这个可能有点难实现？）
