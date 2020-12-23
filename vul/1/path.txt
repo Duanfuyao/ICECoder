@@ -6,15 +6,6 @@ cmdutils.c@404
 mem.c@175
 mem.c@178
 
-
-
-
-e= fscanf(f, "%999[^\n]\n", line) - 1
- e|= sscanf(line, "%999[^=]=%999[^\n]\n", tmp, tmp2) - 2;
-}else if(opt_default(tmp, tmp2) < 0){
-opt_names[opt_name_count++] = av_strdup(opt);
-int len = strlen(s) + 1;
-memcpy(ptr, s, len);
 #对于这条缺陷它是正确报出的概率
 after_softmax:0.6115
 
